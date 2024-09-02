@@ -1,0 +1,38 @@
+.keycontainer{
+    width: 70%;
+    min-height:100px;
+    max-height:360px;
+    padding: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(26, 26, 26);
+    border-radius: 15px;
+    z-index: 2;
+    overflow-y: scroll;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    left: 10%;
+}
+
+.keycontainer::-webkit-scrollbar{
+    width: 1px;
+}
+
+
+.box{
+    width: 98%;
+    min-height: 20px;
+    margin-bottom: 3px;
+    border: 1px solid var(--BORDER);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:770px){
+   .box h3{
+      font-size: 15px;
+   }
+}

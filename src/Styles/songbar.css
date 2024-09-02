@@ -1,0 +1,70 @@
+:root{
+    --TITLE-COLOR:#ffff;
+    --DIC-COLOR:#9F9E9C;
+    --BORDER-COLOR:#424242;
+    --DARK-BG:#1E1E1E;
+}
+
+
+
+.barbox{
+    align-self: center;
+    position: absolute;
+    bottom: 10px;
+    right: 6%;
+    min-width:250px;
+    width: 70%;
+    margin: 6px;
+    border: 1px solid var(--BORDER-COLOR);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--DARK-BG);
+    z-index: 2;
+}
+
+.songimage{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    
+}
+
+.songdetail{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 2px;
+}
+
+.songtitle{
+    margin: 0;
+    font-size: small;
+    font-weight: 700;
+    color: var(--TITLE-COLOR);
+}
+
+.singer{
+    margin: 0;
+    font-size: smaller;
+    font-weight: 600;
+    opacity: 0.7;
+    color: var(--DIC-COLOR);
+}
+
+.barcontroler{
+    width: 100px;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (min-width:768px){ 
+    .barbox{
+        display: none;
+    }
+}

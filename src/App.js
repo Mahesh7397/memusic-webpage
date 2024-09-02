@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import SongBar from './components/layout/SongBar';
+import Leftsidebar from './components/Leftsidebar';
+import Main from './components/Main';
+import RightSidebar from './components/RightSidebar';
+import SongProvider from './hooks/Controleprovider';
 
 function App() {
   return (
+    <SongProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header/>
+       <div className='Appbody'>
+       <Leftsidebar/>
+       <Main/>
+       <RightSidebar/>
+       <SongBar/>
+       </div>
     </div>
+    </SongProvider>
   );
 }
 

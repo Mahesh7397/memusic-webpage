@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 3%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagecover{
+    border: 1px solid transparent;
+    border-radius: 10%;
+    width:60%;
+    height:45%
+}
+h3{
+    color: #ffff;
+}
+p{
+    color: rgb(104, 102, 102);
+    font-weight: 700;
+}
+.controler{
+    display: flex;
+    flex-direction:row;
+    min-width:200px;
+    max-width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slidecontainer {
+    width: 90%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width:100%; /* Full-width */
+    height: 4px; /* Specified height */
+    border: 0.5px solid transparent;
+    border-radius: 15px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--PRIMARY); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--PRIMARY); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.timebar{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time{
+    color: #d3d3d3;
+}
